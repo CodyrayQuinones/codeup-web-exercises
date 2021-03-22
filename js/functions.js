@@ -92,7 +92,8 @@ var tipPercent = parseFloat(prompt(" What would you like to tip?"));
 var tipAmount = calculateTip( bill * tipPercent );
 var total = bill + tipAmount;
 
-alert ("Your bill came out to:$ " + bill.toFixed(2))
+alert ("Your bill came out to:$ " + bill.toFixed(2) + ". You decided to tip a generous " + (tipPercentage * 100) + "%, which will result in $" + tipAmount.toFixed(2) + " to be added to your final total for this evening. Your final cheque is: $" + total.toFixed(2) + ".");
+)
 
 /**
  * TODO:
@@ -108,3 +109,9 @@ alert ("Your bill came out to:$ " + bill.toFixed(2))
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+function applyDiscount(originalPrice, markDownPercentage) {
+    var priceAfterDiscount = originalPrice - (originalPrice * markDownPercentage);
+    return priceAfterDiscount;
+}
+
+console.log(applyDiscount(100, .2));
