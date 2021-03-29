@@ -82,8 +82,8 @@ switch(analyzeColor){
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-var colorInput =prompt("What color are you interested in?").toLowerCase()
-analyzeColor(colorInput);
+var colorInput =prompt("What color are you interested in?").toLowerCase();
+
 alert(analyzeColor(colorInput));
 
 
@@ -174,7 +174,7 @@ alert("Your lucky number was " + luckyNumber + " , your original bill was "+ tot
  * HINT: The way we prompt for a value could be improved
  */
 if(confirm('Would you like to enter a number ?')){
-    var numberInput=prompt("Enter the number you would like :" );
+  var numberInput=prompt("Enter the number you would like :" );
 }
 if (!isNaN(numberInput)){
     (numberInput % 2 == 0) ? alert(numberInput + " is even "): alert (numberInput + " is odd"); alert(numberInput + " plus 100 equals to " + (parseFloat(numberInput) + 100));
